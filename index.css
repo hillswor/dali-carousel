@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: Lato;
+	font-size: 3em;
+	background: #111;
+	height: auto;
+}
+
+
+button {
+	background: #111;
+	border: none;
+	height: 1.5em;
+	width: 1.5em;
+	border-radius: 999px;
+	font-size: 1em;
+	outline: none;
+}
+
+.carousel {
+	margin: 2em auto;
+	max-width: 600px;
+	position: relative;
+	box-shadow: 0 0 100px #fc03f4; 
+}
+
+.carousel-item {
+	display: none;
+}
+
+.carousel-item.show {
+	display: block;
+	animation: fadeVisibility 1s;
+}
+
+.carousel-actions {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	justify-content: space-between;
+	transform: translateY(-50%);
+}
+
+#prev-btn {
+	margin-left: .5em;
+}
+
+#next-btn {
+	margin-right: .5em;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
