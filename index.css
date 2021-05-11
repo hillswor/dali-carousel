@@ -9,20 +9,20 @@ body {
 
 
 button {
-	background: #111;
+	background: transparent;
 	border: none;
 	height: 1.5em;
 	width: 1.5em;
 	border-radius: 999px;
 	font-size: 1em;
 	outline: none;
+	color: purple;
 }
 
 .carousel {
 	margin: 2em auto;
-	max-width: 600px;
+	max-width: 800px;
 	position: relative;
-	box-shadow: 0 0 100px #fc03f4; 
 }
 
 .carousel-item {
@@ -44,11 +44,22 @@ button {
 }
 
 #prev-btn {
-	margin-left: .5em;
+	margin-left: 1px;
 }
 
 #next-btn {
-	margin-right: .5em;
+	margin-right: 1px;
+}
+
+.carousel-indicators {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+}
+
+.indicators {
+	font-size: 15px;
 }
 
 @keyframes fadeVisibility {
